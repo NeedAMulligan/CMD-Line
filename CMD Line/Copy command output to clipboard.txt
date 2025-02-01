@@ -1,0 +1,5 @@
+Copy command output to clipboard
+
+add the | clip
+
+to the end of the command

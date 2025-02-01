@@ -1,0 +1,9 @@
+Monitor and kill specific tasks
+
+To list the tasks, use the tasklist command
+
+taskkill /im process_name /f
+
+if Skype is causing issues in your system, use the taskkill /im skype.exe /f 
+
+

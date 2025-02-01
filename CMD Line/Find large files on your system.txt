@@ -1,0 +1,14 @@
+Find large files on your system
+
+forfiles /S /M *.* /C "cmd /c if @fsize gtr 1073741824 echo @path"
+
+
+Let me break down the command for you:
+
+forfiles is a Windows command to take actions on files in a folder
+/S instructs the forfiles to also check the subdirectories
+/M specifies the search pattern. The *.* instructs to check for all names and extensions
+/C "cmd /c if @fsize gtr 1073741824 echo @path": This specifies the command to be executed on each file that matches the search criteria. Here's the breakdown of this sub-command:
+cmd /c: Executes the command string that follows it.
+if @fsize gtr 1073741824: Checks the size of the file (@fsize) and compares it to 1,073,741,824 bytes (1 GB). gtr stands for "greater than." If the file size is greater than 1 GB, the command inside the if condition will execute.
+echo @path: Outputs (displays) the full path of the file that satisfies the condition.

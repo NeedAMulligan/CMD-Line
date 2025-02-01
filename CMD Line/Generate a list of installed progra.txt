@@ -1,0 +1,7 @@
+Generate a list of installed programs
+
+wmic product get name,version
+
+create and save the file under the user account folder
+
+>InstalledApps.csv
