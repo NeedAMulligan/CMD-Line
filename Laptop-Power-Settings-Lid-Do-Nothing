@@ -1,3 +1,8 @@
 powercfg /setACvalueIndex scheme_current sub_buttons lidAction 0
 powercfg /setDCvalueIndex scheme_current sub_buttons lidAction 0
 powercfg /setActive scheme_current
+
+
+
+powercfg -setacvalueindex 5ca83367-6e45-459f-a27b-476b1d01c936 0
+powercfg -setdcvalueindex 5ca83367-6e45-459f-a27b-476b1d01c936 0
